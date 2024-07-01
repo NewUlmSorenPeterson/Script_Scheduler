@@ -141,8 +141,8 @@ def update_watermainbreak_status():
 
     excecution_status("update_jetter_status", script_success, error_count, error_string)
 
-def update_watermainbreak_status_Excecution():
+def main():
     update_watermainbreak_status()
 
 if __name__ == '__main__':
-    update_watermainbreak_status_Excecution()
+    main()

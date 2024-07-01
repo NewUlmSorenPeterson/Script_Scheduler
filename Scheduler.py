@@ -1,13 +1,16 @@
 import schedule
 import time
 import arcpy
+import json
+import os
+
 print("Importing Scripts")
-from scripts.MapRequest_Launcher import launcher # type: ignore
-from scripts.Update_Permits import excecute_update_permit# type: ignore
-from scripts.Update_Jetter_Status import jetter_status_update # type: ignore
-from scripts.Update_Valve_Status import update_valve_status_execution
-from scripts.Update_Hydrant_Status import update_hydrant_status_execution
-from scripts.Update_WatermainBreak_Status import update_watermainbreak_status_Excecution
+import scripts.MapRequest_Launcher as map_request
+import scripts.Update_Permits as update_permits
+import scripts.Update_Jetter_Status as update_jetter_status
+import scripts.Update_Valve_Status as update_valve_status
+import scripts.Update_Hydrant_Status as update_hydrant_status
+import scripts.Update_WatermainBreak_Status as update_watermainbreak_status
 print("Scripts imported")
 
 def job():
@@ -19,11 +22,27 @@ def job():
     time.sleep(10)
     print("I'm working...")
 
-schedule.every(5).minutes.do(launcher)
-schedule.every(1).minutes.do(jetter_status_update)
-schedule.every(update_valve_status_execution).day.at("20:00")
-schedule.every(update_hydrant_status_execution).day.at("21:00")
-schedule.every(update_watermainbreak_status_Excecution).day.at("22:00")
+with open(os.path.join(os.path.dirname(__file__), "Scripts.json")) as json_file:
+    data = json.load(json_file)
+index = 0
+for d in data:
+    s_script = str(d)
+    s_name = data[d]["Name"]
+    s_type = data[d]["Schedule Type"]
+    s_freq = int(data[d]["Scheduled Frequency"])
+    s_date = data[d]["Scheduled Date"]
+    s_time = data[d]["Scheduled Time"]
+    print(s_time)
+    if s_type == "Day":
+        if type(s_time) is list:
+            for t in s_time:
+                schedule.every().day.at(t).do(locals()[s_script].main).tag(s_name)
+        else:
+            schedule.every().day.at(str(s_time)).do(locals()[s_script].main).tag(s_name)
+    if s_type == "Minute":
+        print(s_freq)
+        schedule.every(s_freq).minutes.do(locals()[s_script].main).tag(s_name)
+    print("Name: {}".format(s_name))
 
 print("Script Scheduler Running")
 while True:

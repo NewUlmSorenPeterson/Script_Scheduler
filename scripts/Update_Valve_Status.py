@@ -144,9 +144,9 @@ def update_valve_status():
     
     excecution_status("update_jetter_status", script_success, error_count, error_string)
 
-def update_valve_status_execution():
+def main():
     update_valve_status()
 
 
 if __name__ == '__main__':
-    update_valve_status_execution()
+    main()

@@ -1,17 +1,26 @@
 {
     "map_request": {
         "Name": "Map Request",
-        "Status": "NA",
-        "Scheduled Run": "",
-        "Previous Attempt": "",
-        "Last Successful Attempt": "",
-        "Errors": "",
+        "Status": "Running",
+        "Schedule Type": "Minute",
+        "Scheduled Frequency": "5",
+        "Scheduled Date": "",
+        "Scheduled Time": ":00",
+        "Previous Attempt": "2024-07-01 16:17:25.557096",
+        "Last Successful Attempt": "2024-07-01 16:17:25.557096",
+        "Errors": 0,
         "Error String": ""
     },
     "update_jetter_status": {
         "Name": "Update Jetter Status",
         "Status": "NA",
-        "Scheduled Run": "",
+        "Schedule Type": "Day",
+        "Scheduled Frequency": "12",
+        "Scheduled Date": "",
+        "Scheduled Time": [
+            "00:00",
+            "12:00"
+        ],
         "Previous Attempt": "",
         "Last Successful Attempt": "",
         "Errors": "",
@@ -20,7 +29,13 @@
     "update_valve_status": {
         "Name": "Update Valve Status",
         "Status": "NA",
-        "Scheduled Run": "",
+        "Schedule Type": "Day",
+        "Scheduled Frequency": "12",
+        "Scheduled Date": "",
+        "Scheduled Time": [
+            "00:00",
+            "12:00"
+        ],
         "Previous Attempt": "",
         "Last Successful Attempt": "",
         "Errors": "",
@@ -29,16 +44,28 @@
     "update_hydrant_status": {
         "Name": "Update Hydrant Status",
         "Status": "NA",
-        "Scheduled Run": "",
+        "Schedule Type": "Day",
+        "Scheduled Frequency": "12",
+        "Scheduled Date": "",
+        "Scheduled Time": [
+            "00:00",
+            "12:00"
+        ],
         "Previous Attempt": "",
         "Last Successful Attempt": "",
         "Errors": "",
         "Error String": ""
     },
-    "Update_WatermainBreak_Status": {
+    "update_watermainbreak_status": {
         "Name": "Update WatermainBreak Status",
         "Status": "NA",
-        "Scheduled Run": "",
+        "Schedule Type": "Day",
+        "Scheduled Frequency": "12",
+        "Scheduled Date": "",
+        "Scheduled Time": [
+            "00:00",
+            "12:00"
+        ],
         "Previous Attempt": "",
         "Last Successful Attempt": "",
         "Errors": "",

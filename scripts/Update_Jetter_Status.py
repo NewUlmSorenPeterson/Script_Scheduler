@@ -22,7 +22,7 @@ def excecution_status(script, successful, error_count, error_string):
     with open(r"W:\GIS\Python\Scheduler\Scripts.json", "w") as json_file:
         json.dump(data,json_file, indent=4, separators=(',', ': '))
 
-def jetter_status_update():
+def main():
 
     error_string = ""
     error_count = 0
@@ -136,4 +136,4 @@ def jetter_status_update():
     excecution_status("update_jetter_status", script_success, error_count, error_string)
 
 if __name__ == '__main__':
-    jetter_status_update()
+    main()

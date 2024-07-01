@@ -142,8 +142,8 @@ def update_hydrant_status():
     
     excecution_status("update_jetter_status", script_success, error_count, error_string)
 
-def update_hydrant_status_execution():
+def main():
     update_hydrant_status()
 
 if __name__ == '__main__':
-    update_hydrant_status_execution()
+    main()
