@@ -140,7 +140,7 @@ def update_hydrant_status():
         script_success = False
         pass
     
-    excecution_status("update_jetter_status", script_success, error_count, error_string)
+    excecution_status("update_hydrant_status", script_success, error_count, error_string)
 
 def main():
     update_hydrant_status()

@@ -139,7 +139,7 @@ def update_watermainbreak_status():
         script_success = False
         pass
 
-    excecution_status("update_jetter_status", script_success, error_count, error_string)
+    excecution_status("update_watermainbreak_status", script_success, error_count, error_string)
 
 def main():
     update_watermainbreak_status()

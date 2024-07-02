@@ -6,54 +6,54 @@
         "Scheduled Frequency": "5",
         "Scheduled Date": "",
         "Scheduled Time": ":00",
-        "Previous Attempt": "2024-07-01 16:17:25.557096",
-        "Last Successful Attempt": "2024-07-01 16:17:25.557096",
+        "Previous Attempt": "2024-07-02 09:57:21.072615",
+        "Last Successful Attempt": "2024-07-02 09:57:21.072615",
         "Errors": 0,
         "Error String": ""
     },
     "update_jetter_status": {
         "Name": "Update Jetter Status",
-        "Status": "NA",
+        "Status": "Running",
         "Schedule Type": "Day",
         "Scheduled Frequency": "12",
         "Scheduled Date": "",
         "Scheduled Time": [
-            "00:00",
+            "09:40",
             "12:00"
         ],
-        "Previous Attempt": "",
-        "Last Successful Attempt": "",
-        "Errors": "",
+        "Previous Attempt": "2024-07-02 09:41:59.769590",
+        "Last Successful Attempt": "2024-07-02 09:41:59.769590",
+        "Errors": 0,
         "Error String": ""
     },
     "update_valve_status": {
         "Name": "Update Valve Status",
-        "Status": "NA",
+        "Status": "Running",
         "Schedule Type": "Day",
         "Scheduled Frequency": "12",
         "Scheduled Date": "",
         "Scheduled Time": [
-            "00:00",
+            "09:40",
             "12:00"
         ],
-        "Previous Attempt": "",
-        "Last Successful Attempt": "",
-        "Errors": "",
+        "Previous Attempt": "2024-07-02 09:44:37.161931",
+        "Last Successful Attempt": "2024-07-02 09:44:37.161931",
+        "Errors": 0,
         "Error String": ""
     },
     "update_hydrant_status": {
         "Name": "Update Hydrant Status",
-        "Status": "NA",
+        "Status": "Running",
         "Schedule Type": "Day",
         "Scheduled Frequency": "12",
         "Scheduled Date": "",
         "Scheduled Time": [
-            "00:00",
+            "09:40",
             "12:00"
         ],
-        "Previous Attempt": "",
-        "Last Successful Attempt": "",
-        "Errors": "",
+        "Previous Attempt": "2024-07-02 09:49:36.436821",
+        "Last Successful Attempt": "2024-07-02 09:49:36.436821",
+        "Errors": 0,
         "Error String": ""
     },
     "update_watermainbreak_status": {
@@ -63,7 +63,7 @@
         "Scheduled Frequency": "12",
         "Scheduled Date": "",
         "Scheduled Time": [
-            "00:00",
+            "09:40",
             "12:00"
         ],
         "Previous Attempt": "",

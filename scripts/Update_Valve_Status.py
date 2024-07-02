@@ -142,7 +142,7 @@ def update_valve_status():
         script_success = False
         pass
     
-    excecution_status("update_jetter_status", script_success, error_count, error_string)
+    excecution_status("update_valve_status", script_success, error_count, error_string)
 
 def main():
     update_valve_status()
